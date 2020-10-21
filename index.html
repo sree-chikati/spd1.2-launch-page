@@ -1,23 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Tutorial</title>
+
+    <!-- BOOTSTRAP STYLESHEET LINK-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
+
   <body>
     <!-- NAVBAR -->
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <a class="navbar-brand" href="#">Launch Page</a>
+      <div class="navbar-nav"> <!-- navbar-nav extends to adding links to other pages -->
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <!-- The "Hero" section of our page is usually  a splashy image and text of the product
+     to get a new arrival to our site a good feeling about what we are promoting or selling-->
+    <div class="jumbotron text-center">
+    <!-- In bootstrap, to make a nice Hero, we use the jumbotron component.
+    We will also use the Utility Class text-center to make the text centerd-->
+       <h1>Launch Page</h1>
+       <p class="lead">A Fantastic Product!</p>
+       <a href="#" class="btn btn-primary">Learn More</a>
+    </div>
 
 
-  <!-- HERO -->
+    <!-- BENEFITS -->
+    <div class="container mb-5 mt-5 pb-5 pt-5"> <!-- pb-5 stands for "padding-bottom-5" and pt-5 stands for "padding-top-5" -->
+      <div class="row">
 
-  <h1>Launch Page</h1>
+        <div class="col-lg-4">
+          <h3>Safe</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dicta, fugit! At, ea!
+            Animi eligendi quisquam quia error, vel architecto ratione aliquam molestias sunt enim, hic facilis,
+            neque laudantium officia?</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Healthy</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dicta, fugit! At, ea!
+            Animi eligendi quisquam quia error, vel architecto ratione aliquam molestias sunt enim, hic facilis,
+            neque laudantium officia?</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Fun</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dicta, fugit! At, ea!
+            Animi eligendi quisquam quia error, vel architecto ratione aliquam molestias sunt enim, hic facilis,
+            neque laudantium officia?</p>
+        </div>
 
-  <!-- BENEFITS -->
+      </div>
+    </div>
 
 
-  <!-- CALL TO ACTION -->
+    <!-- CALL TO ACTION -->
+    <div class="jumbotron text-center mb-0">
+    <!-- We use this mb-0 Utility Class to remove the margin from the bottom of the jumbotron class
+    so this section sits flush with the next one: the footer-->
+      <p class="lead mb-4">Sign Up for More Infomation</p>
+      <div class="d-flex justify-content-center">
+      <!-- To make the form centered, we'll use
+      Flex Box Utility Classes d-flex justify-content-center -->
+        <form action="#" class='form-inline'>
+        <!-- We can use bootstrap's inline-form class to make the form horizontal instead of the default vertical forms-->
+          <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+      </div>
+    </div>
 
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- Its good to make footers a dark color because it sort of signifies that the page is over.-->
+    <div class="bg-secondary p-5 text-white">
+    <!-- bg-secondary gives us the secondary background color (dark grey),
+    and p-5 gives the element a large amount of padding on all sides.
+    and text-white makes the text white -->
+      &copy; 2019 Launch Page Inc <!-- That little &copy; is HTML's way of writing the copyright symbol: ©. -->
+    </div>
+
   </body>
 </html>
