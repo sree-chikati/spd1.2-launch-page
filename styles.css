@@ -1,0 +1,23 @@
+.navbar {
+  padding 1rem;
+  background-color: blue;
+}
+
+footer{
+  padding: 3rem;
+  background-color: darkblue;
+}
+
+.btn-primary:hover {
+  background-color: blue;
+  color: white;
+}
+
+.btn-primary {
+  background: white;
+  color: blue;
+}
+
+.btn{
+  border-radius: 50px;
+}
