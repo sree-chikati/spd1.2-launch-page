@@ -21,3 +21,10 @@ footer{
 .btn{
   border-radius: 50px;
 }
+
+.hero-background-img {
+  background-image: url("build.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
