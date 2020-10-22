@@ -1,26 +1,27 @@
 .navbar {
   padding 1rem;
-  background-color: blue;
+  background-color: black;
 }
 
 footer{
   padding: 3rem;
-  background-color: darkblue;
+  background-color: black;
 }
 
 .btn-primary:hover {
-  background-color: blue;
+  background-color: black;
   color: white;
 }
 
 .btn-primary {
   background: white;
-  color: blue;
+  color: black;
 }
 
 .btn{
   border-radius: 50px;
 }
+
 
 .hero-background-img {
   background-image: url("build.jpg");
@@ -31,4 +32,8 @@ footer{
   position: relative;
   padding-top:200px;
   padding-bottom:200px;
+}
+
+.form-control {
+  border: solid 2px black;
 }
